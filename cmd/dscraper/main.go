@@ -57,7 +57,7 @@ func (c content) toDTO() model.Bank {
 // This command line just parse the HTML, finder for the script and export the data
 func main() {
 	output := flag.String("o", "stdout", "Output format")
-	filename := flag.String("f", "companies", "Output file name")
+	filename := flag.String("f", "banks", "Output file name")
 	flag.Parse()
 
 	expr := exporter.NewExporter(*output, *filename)
