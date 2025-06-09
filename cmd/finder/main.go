@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
+	"fmt"
 	"log"
 	"os"
 	"strconv"
@@ -72,5 +73,5 @@ func main() {
 		return
 	}
 
-	log.Println(string(jsonData))
+	fmt.Println(string(jsonData))
 }

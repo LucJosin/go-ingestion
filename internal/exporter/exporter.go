@@ -4,7 +4,6 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 	"strconv"
 
@@ -53,7 +52,7 @@ func (e *Exporter) exportToStdOut(data []model.Bank) error {
 			return fmt.Errorf("Error marshalling JSON: %v\n", err)
 		}
 
-		log.Println(string(jsonData))
+		fmt.Println(string(jsonData))
 	}
 
 	return nil
