@@ -9,12 +9,12 @@ This project includes two command-line tools written in Go using the Colly web s
 
 ## Part 1 – Bank List Scraper
 
-Scrapes bank data from url.
+Scrapes bank data from [forbes](https://www.forbes.com/lists/worlds-best-banks/).
 
 ### Input
 
-- Output format: stdout, json or csv (default: stdout)
-- Filename: The output filename (default: banks)
+- Output format: `stdout`, `json` or `csv` **(default: stdout)**
+- Filename: The output filename **(default: banks)**
 
 ```bash
 go run cmd/scraper/main.go -o csv
