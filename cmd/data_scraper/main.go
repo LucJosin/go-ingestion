@@ -49,7 +49,7 @@ func (c content) toDTO() model.Bank {
 
 // Data Scraper (using the injected content)
 //
-// For this "dscraper" we can use the json data that is injected into the HTML page,
+// For this "data_scraper" we can use the json data that is injected into the HTML page,
 // you can preview the data using the devtools console with the command:
 //
 // window["forbes"]["simple-site"].tableData
